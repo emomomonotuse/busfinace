@@ -1,0 +1,10 @@
+<?xml version ="1.0" encoding ="utf-8"?><!--  Learn More about how to use App Actions: https://developer.android.com/guide/actions/index.html -->
+<actions>
+    <!-- 定义一个 App Action -->
+    <action intentName="actions.intent.OPEN_APP">
+        <action-display
+            icon="@mipmap/ic_launcher"
+            labelTemplate="@string/app_name" />
+        <fulfillment urlTemplate="myapp://open" />
+    </action>
+</actions>
