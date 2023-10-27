@@ -3,5 +3,6 @@
     <style name="TransparentBottomNavBar" parent="Widget.Design.BottomNavigationView">
         <!-- 使背景透明 -->
         <item name="android:background">@android:color/transparent</item>
+        <item name="android:button">@null</item>
     </style>
 </resources>
