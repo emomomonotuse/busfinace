@@ -195,9 +195,10 @@
         android:rowCount="3">
         <TextView
             android:layout_width="0dp"
-            android:layout_height="wrap_content"
+            android:layout_height="@dimen/dp_25"
             android:layout_columnWeight="1"
             android:text=" 最高可贷额度："
+            android:textStyle="bold"
             android:textSize="15sp"
             android:textColor="@color/black"
             android:layout_marginLeft="@dimen/dp_5"
@@ -205,9 +206,10 @@
             />
         <TextView
             android:layout_width="0dp"
-            android:layout_height="wrap_content"
+            android:layout_height="@dimen/dp_25"
             android:layout_columnWeight="1"
             android:text=" 总待还:"
+            android:textStyle="bold"
             android:textSize="15sp"
             android:textColor="@color/black"
             android:layout_marginLeft="@dimen/dp_5"
@@ -271,13 +273,12 @@
         android:orientation="vertical"
         android:layout_below="@id/g1"
         android:layout_marginTop="@dimen/dp_12"
-        android:layout_marginLeft="@dimen/dp_5"
-        android:background="#FFFFFF">
+        >
 
         <!-- 搜索条目 -->
         <LinearLayout
             android:id="@+id/search"
-            android:background="@color/green4"
+            android:background="@color/white"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_gravity="start"
@@ -290,6 +291,7 @@
                 android:layout_width="@dimen/dp_20"
                 android:layout_height="@dimen/dp_20"
                 android:layout_gravity="center"
+                android:layout_marginLeft="@dimen/dp_5"
                 android:src="@mipmap/search" /> <!-- 替换为你的搜索图标 -->
 
             <TextView
@@ -317,7 +319,7 @@
             android:layout_height="wrap_content"
             android:orientation="horizontal"
             android:gravity="center_vertical"
-            android:background="@color/green4"
+            android:background="@color/white"
             android:paddingTop="@dimen/dp_10"
             android:layout_marginTop="@dimen/dp_5"
             android:paddingBottom="@dimen/dp_10">
@@ -326,7 +328,8 @@
                 android:layout_width="@dimen/dp_20"
                 android:layout_gravity="center"
                 android:layout_height="@dimen/dp_20"
-                android:src="@mipmap/finance" /> <!-- 替换为你的箭头图标 -->
+                android:src="@mipmap/finance"
+                android:layout_marginLeft="@dimen/dp_5"/>
 
             <TextView
                 android:layout_width="wrap_content"
