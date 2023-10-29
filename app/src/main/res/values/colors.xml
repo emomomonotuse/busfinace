@@ -8,7 +8,7 @@
     <color name="green4">#2A98DFEC</color>
     <color name="character1">#FF5AA2D0</color>
     <color name="character2">#384CB7</color>
-    <color name="transparent">#0DF4EB36</color>
+    <color name="transparent">#00F4EB36</color>
     <color name="character3">#47494D</color>
     <color name="my_primary_color">@android:color/transparent</color>
 

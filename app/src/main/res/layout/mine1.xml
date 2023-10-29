@@ -176,6 +176,7 @@
             android:background="@mipmap/notice" />
 
         <TextView
+            android:id="@+id/improve_notice"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="@dimen/dp_5"
@@ -184,86 +185,87 @@
             android:text="@string/mine_noticedefault"/>
 
     </LinearLayout>
+
     <GridLayout
         android:id="@+id/g1"
-        android:layout_width="match_parent"
+        android:layout_width="@dimen/dp_365"
         android:layout_height="wrap_content"
         android:layout_below="@id/l2"
-        android:layout_marginTop="@dimen/dp_8"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="@dimen/dp_20"
         android:background="@color/white"
         android:columnCount="2"
         android:rowCount="3">
+
         <TextView
             android:layout_width="0dp"
-            android:layout_height="@dimen/dp_25"
+            android:layout_height="@dimen/dp_30"
             android:layout_columnWeight="1"
-            android:text=" 最高可贷额度："
-            android:textStyle="bold"
-            android:textSize="15sp"
-            android:textColor="@color/black"
             android:layout_marginLeft="@dimen/dp_5"
             android:layout_marginTop="@dimen/dp_5"
-            />
+            android:text=" 我的额度："
+            android:textColor="@color/black"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+
         <TextView
             android:layout_width="0dp"
-            android:layout_height="@dimen/dp_25"
+            android:layout_height="@dimen/dp_30"
             android:layout_columnWeight="1"
+            android:layout_marginLeft="@dimen/dp_5"
+            android:layout_marginTop="@dimen/dp_5"
             android:text=" 总待还:"
-            android:textStyle="bold"
-            android:textSize="15sp"
             android:textColor="@color/black"
-            android:layout_marginLeft="@dimen/dp_5"
-            android:layout_marginTop="@dimen/dp_5"
-            />
+            android:textSize="15sp"
+            android:textStyle="bold" />
+
         <TextView
-            android:id="@+id/maxloan"
+            android:id="@+id/mine_loan"
             android:layout_width="0dp"
             android:layout_height="@dimen/dp_50"
             android:layout_columnWeight="1"
-            android:text="@string/mine_maxloandefault"
-            android:textSize="30sp"
-            android:textStyle="bold"
-            android:textColor="@color/character2"
             android:layout_marginLeft="@dimen/dp_5"
             android:layout_marginTop="@dimen/dp_5"
-            />
+            android:text="@string/mine_loandefault"
+            android:textColor="@color/character2"
+            android:textSize="30sp"
+            android:textStyle="bold" />
+
         <TextView
             android:id="@+id/debt"
             android:layout_width="0dp"
             android:layout_height="@dimen/dp_50"
             android:layout_columnWeight="1"
-            android:text="0.00"
-            android:textSize="30sp"
-            android:textColor="@color/character2"
-            android:textStyle="bold"
             android:layout_marginLeft="@dimen/dp_5"
             android:layout_marginTop="@dimen/dp_5"
-            />
+            android:text="0.00"
+            android:textColor="@color/character2"
+            android:textSize="30sp"
+            android:textStyle="bold" />
 
         <Button
-            android:id="@+id/imme_repay"
+            android:id="@+id/imme_activation"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:layout_columnWeight="1"
-            android:text="点击立即激活额度 >    "
-            android:textSize="10sp"
+            android:layout_columnWeight="0.5"
             android:background="#00000000"
-            android:visibility="visible"
-            android:textColor="@color/character3"
             android:gravity="end"
-            />
+            android:text="点击立即激活额度 >    "
+            android:textColor="@color/character3"
+            android:textSize="10sp"
+            android:visibility="visible" />
+
         <Button
             android:id="@+id/check"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:layout_columnWeight="1"
+            android:layout_columnWeight="0.5"
             android:background="#00000000"
-            android:visibility="visible"
-            android:text="点击查看账单 >    "
-            android:textSize="10sp"
-            android:textColor="@color/character3"
             android:gravity="end"
-            />
+            android:text="点击查看账单 >    "
+            android:textColor="@color/character3"
+            android:textSize="10sp"
+            android:visibility="visible" />
     </GridLayout>
 
     <LinearLayout
@@ -271,6 +273,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical"
+    android:layout_centerInParent="true"
         android:layout_below="@id/g1"
         android:layout_marginTop="@dimen/dp_12"
         >
@@ -307,7 +310,7 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:text=">"
-                android:layout_marginLeft="@dimen/dp_260"
+                android:layout_marginLeft="@dimen/dp_250"
                 android:textColor="@color/character1"/>
 
         </LinearLayout>
@@ -344,7 +347,7 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:text=">"
-                android:layout_marginLeft="@dimen/dp_260"
+                android:layout_marginLeft="@dimen/dp_250"
                 android:textColor="@color/character1"/>
         </LinearLayout>
     </LinearLayout>
@@ -372,23 +375,25 @@
                     style="@style/TransparentBottomNavBar"/>
 
                 <RadioButton
-                    android:id="@+id/suggestion"
+                    android:id="@+id/feedback"
                     style="@style/TransparentBottomNavBar"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="@dimen/dp_20"
                     android:drawableTop="@drawable/suggestion"
-                    android:text=" 意见反馈"
+                    android:text="意见反馈"
+                    android:textAlignment="center"
                     android:textColor="@color/black"
                     android:textSize="10sp"
                     android:visibility="visible" />
                 <RadioButton
-                    android:id="@+id/aboutus"
+                    android:id="@+id/about_us"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="@dimen/dp_20"
                     android:drawableTop="@drawable/aboutus"
-                    android:text="  关于我们"
+                    android:text="关于我们"
+                    android:textAlignment="center"
                     android:textSize="10sp"
                     android:textColor="@color/black"
                     style="@style/TransparentBottomNavBar"

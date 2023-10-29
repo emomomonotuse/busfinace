@@ -15,14 +15,17 @@
         <activity
             android:name=".BottomNavigationHelper"
             android:exported="false"
+
             />
         <activity
             android:name=".bill"
             android:exported="false"
+            android:launchMode="singleTop"
      />
         <activity
             android:name=".mine1"
             android:exported="false"
+            android:launchMode="singleTop"
       />
 
         <meta-data
@@ -31,7 +34,8 @@
 
         <activity
             android:name=".home"
-            android:exported="true">
+            android:exported="true"
+            android:launchMode="singleTop">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.LAUNCHER" />
