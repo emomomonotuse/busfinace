@@ -59,7 +59,7 @@
         android:layout_centerHorizontal="true"
         android:background="@drawable/background2">
         <LinearLayout
-            android:id="@+id/personl"
+            android:id="@+id/personl_info_management"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="horizontal"

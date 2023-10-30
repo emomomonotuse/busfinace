@@ -1,13 +1,17 @@
 <resources>
     <string name="app_name">大巴金融</string>
     <string name="title_activity_main2">MainActivity2</string>
-    <string name="bottomNavView" >bottomNavView</string>
-    <string name="version" >v 1.0.0</string>
+    <string name="bottomNavView">bottomNavView</string>
+    <string name="version">v 1.0.0</string>
     <string name="mine_noticedefault">  请完善您的身份信息，以免影响使用</string>
     <string name="mine_loandefault">200,000.00</string>
     <string name="defaulttel">123****7899</string>
     <string name="defaultid">No.1</string>
     <string name="defaultvertify">您还未进行实名认证</string>
     <string name="defaultmonthbill">0.00</string>
+    <string name="account_name">JnfkaNFk_qk2</string>
+    <string name="real_name_certification">您还未进行实名认证</string>
+    <string name="email_account">您还未进行邮箱绑定</string>
+    <string name="risk_level">立即测评</string>
 
 </resources>

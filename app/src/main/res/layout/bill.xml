@@ -145,8 +145,8 @@
     <ScrollView
         android:layout_width="@dimen/dp_370"
         android:layout_height="wrap_content"
+        android:layout_above="@id/history_bill"
         android:layout_below="@id/l2"
-        android:layout_above="@id/bottomNavView"
         android:layout_centerInParent="true"
         android:layout_marginTop="@dimen/dp_12"
         android:background="@color/transparent">
@@ -388,6 +388,7 @@
     </ScrollView>
 
     <TextView
+        android:id="@+id/history_bill"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_above="@id/bottomNavView"

@@ -13,20 +13,19 @@
         android:theme="@style/Theme.MyApplication"
         tools:targetApi="31">
         <activity
+            android:name=".personal_info_management_activity"
+            android:exported="false" />
+        <activity
             android:name=".BottomNavigationHelper"
-            android:exported="false"
-
-            />
+            android:exported="false" />
         <activity
             android:name=".bill"
             android:exported="false"
-            android:launchMode="singleTop"
-     />
+            android:launchMode="singleTop" />
         <activity
             android:name=".mine1"
             android:exported="false"
-            android:launchMode="singleTop"
-      />
+            android:launchMode="singleTop" />
 
         <meta-data
             android:name="com.google.android.actions"
@@ -38,6 +37,7 @@
             android:launchMode="singleTop">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
+
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
